@@ -1,0 +1,22 @@
+#include <iostream>
+#include "math.h" //pour pouvoir utiliser sqrt et abs
+using namespace std;
+
+int main() {
+    double x1, y1, x2, y2;
+    cout << "Entrez x1\n";
+    cin>> x1;
+    cout << "Entrez y1\n";
+    cin>> y1;
+    cout << "Entrez x2\n";
+    cin>> x2;
+    cout << "Entrez y2\n";
+    cin>> y2;
+    // la distance est la  Racine carrée de la somme des carrés, de la valeur absolue, de la différence entre les coordonées haha
+    // distance= Racine(|(x2-x1|*|(x2-x1| + |(y2-y1|*|(y2-y1|)
+    double difference1=abs(x2-x1);  // |(x2-x1| abs c'est la valeur absolue 
+    double difference2=abs(y2-y1); //|(y2-y1
+    double distance=sqrt(pow(difference1,2)+ pow(difference2,2)); // pow(a,b) c'est a exposant b et sqrt c'est la racine carrée
+    cout << "La distance entre les points (" << x1<<","<<x2 << "),(" << y1<<","<<y2 << ") est : " << distance;
+	return 0;
+}

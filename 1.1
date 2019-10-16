@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+   double a,b; // il fallait mettre une virgule entre a et b
+   cout<<"entrer la valeur de la longueur du rectangle\n"; // \n permet d'aller à la ligne
+   cin >>a;
+   cout<<"entrer la valeur de la largeur du rectangle\n";
+   cin >>b;
+   if((a<0) ||(b<0)) // ces deux barres ||  veulent dire 'ou'
+   {
+       cout << "erreurs\n";  // quan tu fais un cout , ce qui suit doit être mis entre guillemets ""  quand c'est du texte
+           
+   }
+   else
+   {
+       cout<<"le perimetre du rectangle est:"<<(a+b)*2;
+       cout <<"\nl'air de la surface est:"<<(a*b);
+       
+   }
+   
+    
+}

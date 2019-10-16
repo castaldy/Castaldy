@@ -1,0 +1,29 @@
+#include <iostream>
+#include "math.h"
+using namespace std;
+//Deux nombres non nuls sont donnés.  Trouvez la somme, la différence, le produit et
+// quotient de leurs modules
+int main() {
+    int n1=0,n2=0, valeurAbsolue1, valeurAbsolue2; //au début n1 et n2 sont 0 :c'Est voulu ! pour pouvoir faire la boucle whilw
+    do{
+        cout <<"Veuillez entrez le premier nombre\n";
+        cin >> n1;
+    }
+    while(n1 ==0 );  // on lui redemande le nombre tant qu'il entre un entier null puisqu'on pourra pas diviser par 0
+    //cette plateforme n'est pas si douée pour ce genre d'instruction while , actuellement quand tu entres 0 il fait n'importe quoi 
+    //Mais normalement, le programme est censé te redemander un autre nombre jusqu'a ce que tu entre un non null
+    do{
+        cout <<"Veuillez entrez le second nombre\n";
+        cin >> n2;
+    }
+    while(n2 ==0 ); // on lui redemande le nombre tant qu'il entre un entier null puisqu'on pourra pas diviser par 0
+    
+    valeurAbsolue1=abs(n1);  
+    valeurAbsolue2=abs(n2);
+    
+    cout << "La somme de leur valeurs absolues est :" <<  valeurAbsolue1 + valeurAbsolue2;
+    cout << "\nLa difference de valeurs absolues est : " << valeurAbsolue1 - valeurAbsolue2;
+    cout << "\nLe produit de valeurs absolues est : " << valeurAbsolue1 * valeurAbsolue2;
+    cout << "\nLe quotient de valeurs absolues est : " << valeurAbsolue1 / valeurAbsolue2;
+	return 0;
+}

@@ -1,0 +1,19 @@
+#include <iostream>
+#include <math.h>
+using  namespace  std ;
+
+main () {
+	float xa, xb, xc, ac, bc;
+	cout << " entrer l'abscisse  du premier point:\n" ; 
+	cin >> xa;
+	cout << " entrer l'abscisse du deuxieme point:\n" ; 
+	cin >> xb;
+	cout << " entrer l'abscisse du troisieme point:\n" ; 
+	cin >> xc;
+	ac = fabs (xa - xc);
+	bc = fabs (xb - xc);
+	cout << " AC length = " << ac;
+	cout << " BC length = " << bc;
+	cout << "\n longueur totale de AC et BC = " << ac + bc;
+	return  0 ;
+}

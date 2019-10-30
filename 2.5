@@ -1,0 +1,31 @@
+#include <iostream>
+#include "math.h"
+using  namespace  std ;
+
+main () {
+	int xA, yA, xB, yB, xC, yC;
+	cout << " entrer l'abscisse du premier sommet xa:\n" ; 
+	cin >> xA;
+	cout << " entrer l'ordonnee du premier sommet ya:\n" ; 
+	cin >> yA;
+	cout << " entrer l'abscisse du second sommet xb:\n" ; 
+	cin >> xB;
+	cout << " entrer l'ordonnee du second sommet yb:\n" ; 
+	cin >> yB;
+	cout << " entrer l'abscisse du troisieme semmey xb:\n" ; 
+	cin >> xC;
+	cout << " entrer l'ordonnee du troisieme sommet yb:\n" ; 
+	cin >> yC;
+    
+    double ab =sqrt(pow((abs(xA - xB)), 2) + pow((abs(yA - yB)), 2));
+    double ac =sqrt(pow((abs(xA - xC)), 2) + pow((abs(yA - yC)), 2));
+    double bc =sqrt(pow((abs(xB - xC)), 2) + pow((abs(yB - yC)), 2));
+
+    double demiPerimetre = 0.5 * (ab + ac + bc);
+
+    //Formule de Héron
+    double aire = sqrt(demiPerimetre * (demiPerimetre - ab ) * (demiPerimetre - ac) * (demiPerimetre - bc));
+    
+	cout << "\n La surface  du triangle  est = " << aire;
+	return  0 ;
+}

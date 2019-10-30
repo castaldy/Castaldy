@@ -1,0 +1,21 @@
+#include <iostream>
+#include "math.h"
+using  namespace  std ;
+
+main () {
+	float xCoint1, yCoint1, xCoint2, yCoint2;
+	cout << " entrer l'abscisse du premier coin xa:\n" ; 
+	cin >> xCoint1;
+	cout << " entrer l'ordonnee du premier coin ya:\n" ; 
+	cin >> yCoint1;
+	cout << " entrer l'abscisse du deuxieme coin xb:\n" ; 
+	cin >> xCoint2;
+	cout << " entrer l'ordonnee du deuxieme coin yb:\n" ; 
+	cin >> yCoint2;
+	int longueur = fabs (xCoint1 - xCoint2);
+	int largeur  = fabs (yCoint1 - yCoint2);
+
+	cout << "\n Le perimetre du rectangle est = " << (longueur + largeur)*2;
+	cout << "\n La surface  du rectangle est = " << longueur * largeur;
+	return  0 ;
+}

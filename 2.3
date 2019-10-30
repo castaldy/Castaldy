@@ -1,0 +1,19 @@
+#include <iostream>
+#include <math.h>
+using  namespace  std ;
+
+main () {
+	float xa, xb, xc, ac, bc;
+	cout << " entrer l'abscisse du point A: xa\n" ; 
+	cin >> xa;
+	cout << " entrerl'abscisse du  point B: xb\n" ; 
+	cin >> xb;
+	cout << " entrer l' abscisse xc tel que xa < xc < xb du  point C qui doit être entre A et B svp:\n" ;  // si C n'est pas entre A et B, le résultat sera faux (négatif par exemple)
+	cin >> xc;
+	ac = xc - xa;
+	bc = xb - xc;
+	cout << " AC = " << ac;
+	cout << " BC  = " << bc;
+	cout << "\n Le produit des longueurs AC et BC soit AC * BC = " << ac * bc;
+	return  0 ;
+}

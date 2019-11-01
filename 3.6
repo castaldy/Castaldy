@@ -1,0 +1,19 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main ()
+{
+	int a, resultat, valAuxilliaire;
+	
+	cout << "entrer le nombre a: " << endl;
+	cin >> a;
+	
+	valAuxilliaire = pow(a, 2); // a au carré = a^2 
+	
+	resultat = valAuxilliaire * valAuxilliaire  * valAuxilliaire  * valAuxilliaire ;
+	// a^8 = a^2 * a^2 * a^2 * a^2 
+	
+    cout << "le resultat est "  << resultat << " pour a = " << a << endl;
+}

@@ -1,0 +1,15 @@
+#include <iostream>
+using  namespace  std;
+int main () {
+	double n1, n2, temp;
+	cout << " entrer le premier nombre: n1" << endl; //endl pour aller à la ligne
+    cin >> n1;
+	cout << " entrer le second nombre: n2" << endl; 
+    cin >> n2;
+    
+    temp = n1;  // on garde dans temp, la valeur de n1 avant de le remplacer par n2
+    n1 = n2;    // n1 est désormais n2
+    n2 = temp;  // n2 prend l'ancienne valeur de n1 qu'on avait gardée dans temp
+    
+    cout << " Apres inversion, on a: n1 = " << n1 << ", n2 = " << n2 << endl ;
+}

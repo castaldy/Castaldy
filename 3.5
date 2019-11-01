@@ -1,0 +1,14 @@
+#include <iostream> // remarque la syntaxe des directives includes 
+#include <math.h>
+
+using namespace std;
+
+int  main () {
+    
+	int x, resultat ;
+	cout << "entrer le  nombre x: " << endl;
+	cin >> x;
+	
+	resultat = 4 * (pow(x - 3, 6)) - 6* (pow(x - 3, 3)) + 2;
+    cout << "le resultat est "  << resultat << " pour x = " << x << endl;	
+}

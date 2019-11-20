@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b;
+    do{
+        cout << "A doit etre superieur a B" << endl;
+        cout << "enter A" << endl;
+        cin >> a;
+        cout << "enter B" << endl;
+        cin >> b;
+    } while(a < b );
+    cout << "le nombre maximum de segments de B sur A est " << a/b;  // division entière
+    //on prend la partie entiere du nombre a virgule trouvé
+    
+	return 0;
+}

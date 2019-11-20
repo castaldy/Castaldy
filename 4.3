@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  
+    const int unRouble = 1; // 1 rouble 
+    float x, y;
+    cout <<"entrer les X"<< endl;
+    cin >> x;
+    cout <<"entrer les Y"<< endl;
+    cin >> y;
+    //regle de trois : Xkg->1 roubles; 1kg -> ?
+    cout << "On a " << x <<" kg coutent 1 rouble donc 1 kg coute " << unRouble/x << " roubles" <<endl; 
+    
+    //regle de trois : Xkg->1 roubles; Y kg -> ?
+    cout <<y <<"kg coutent "<< (y*unRouble)/x  << " roubles" << endl;
+    return 0;
+}

@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a1, a2, b1, b2, c1, c2;
+    cout <<"entrer a1"<< endl;
+    cin >> a1;
+    cout <<"entrer a2"<< endl;
+    cin >> a2;
+    cout <<"entrer b1"<< endl;
+    cin >> b1;
+    cout <<"entrer b2"<< endl;
+    cin >> b2;
+    cout <<"entrer c1"<< endl;
+    cin >> c1;
+    cout <<"entrer c2"<< endl;
+    cin >> c2;
+    
+    double y, x;
+    y = (a1*c2 - c1*a2)/(a1*b2 - a2*b1);
+    
+    x = (c2 - b2*y)/a2;
+    
+    cout << "x = " << x << endl;
+    cout << "y = " << y;
+	return 0;
+}

@@ -1,0 +1,26 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+//il y a d'autres facons de faire 
+
+int main() {
+
+    int numero; 
+    cout << "entrez le numero avec les deux chiffres" << endl;
+    cin >> numero;
+    
+    //division entiere ex: 10/3 = 3 et non 3.33 
+    //(on prend juste la partie entiere comme numero est un int)
+    
+    int premierChiffre = numero/10; 
+    int secondChiffre = numero % 10; //modulo = reste de la division entiere ex: 34 % 10 = 4; 
+  
+    cout << "le numero reorganise est " << secondChiffre*10 + premierChiffre; 
+    //si le nombre est 34 
+    //34/10 = 3
+    //34 % 10 = 4;
+    //le nouveau nombre est 43 = 4*10 + 3
+    
+	return 0;
+}

@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    float v1, v2, s, t;
+    cout <<"entrer V1"<< endl;
+    cin >> v1;
+    cout <<"entrer V2"<< endl;
+    cin >> v2;
+    cout <<"entrer S, la distance les separant initialement "<< endl;
+    cin >> s;
+    cout <<"entrer t, le nombre d heures apres lesquelles on cherche la distance les separant"<< endl;
+    cin >> t;
+    
+    float d1, d2, d12;
+    d1 = v1*t;
+    d2 = v2*t;
+    cout <<"Si les voitures s eloignent l'une de l' autre: " << endl;
+    cout << "La distance parcourue par la voiture 1 apres " << t << " heures est " << d1 << endl;
+    cout << "La distance parcourue par la voiture 2 apres " << t << " heures est " << d2 << endl;
+    d12 = s + d1 + d2;
+    cout << "La distance separant les deux est " <<  d12; 
+	return 0;
+}

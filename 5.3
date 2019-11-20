@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b;
+    do{
+        cout << "A doit etre superieur a B" << endl;
+        cout << "enter A" << endl;
+        cin >> a;
+        cout << "enter B" << endl;
+        cin >> b;
+    } while(a < b );
+    
+    cout << "la longueur restante est " << a % b; 
+    //on prend le reste de la division entiere de a par b(modulo -> %)
+    
+	return 0;
+}

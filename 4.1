@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+   double a;
+   cout<<"veuillez entrer a";
+   cin >>a;
+   if((a<0)||(a>360))
+   {
+    cout <<"erreur,valeur non valide";
+   }
+   else 
+   {
+    cout << "la valeur en radian est:"<<(a*3.14/180);
+   }
+    return 0;
+}

@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+main(){
+	double a[1000];
+	int n,i,d,k=0;
+	cout<<"enter the number of elements for the array n: "; cin>>n;
+	for(i=1;i<=n;i++){
+		cout<<"enter value"<<i<<" "; cin>>a[i];
+	}
+	d=a[2]-a[1];
+	for(i=1;i<+n;i++){
+		if(a[i]!=a[1]+(i-1)*d){ k++;break;
+	}
+	}if(k==0){ cout<<"arithmetic progression with common denominator "<<d;
+	}else{cout<<"0";
+	}
+}

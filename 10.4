@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<math.h>
+
+int main(){
+	float sum=0,a,n,i;
+	printf(" enter real number a"); scanf("%f", &a);
+	printf(" enter positive integer n"); scanf("%f", &n);
+	if(n<0){
+		printf("error");
+	}else{
+		for(i=0;i<=n;i++){
+		sum=sum+pow(a,i);
+	}
+	printf(" sum = %f",sum);
+	}
+	return 0;
+}

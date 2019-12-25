@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int main(){
+    double a[1000],s=0;
+    int n,k,l,i;
+    cout<<"enter integer k(>=1): "; cin>>k;
+	cout<<"enter integer l(>=k): "; cin>>l;
+	cout<<"enter integer n(>=l): "; cin>>n;
+    for(i=1;i<=n;i++){
+	cout<<"enter value "<<i<<" "; cin>>a[i];
+    }
+    if(1>k||k>l||l>n){ cout<<"error";
+	}
+	for(i=k;i<=l;i++){
+		s+=a[i];
+	}
+	cout<<s/(l-k+1);
+}

@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int A,B,C;
+    cout << "Give a value for A: " ;
+    cin >> A;
+
+    cout <<"\nGive a values for B: ";
+    cin>> B;
+
+    cout <<"\nGive a values for C: ";
+    cin>> C;
+
+    if(A<B && B<C){
+        cout <<"\nSequence croissante";
+    }
+    else if(A>B && C<B){
+        cout <<"\nSequence decroissante";
+    }
+    else{
+        cout <<"\nla sequence n'est ni croissante ni decroissante";
+    }
+    return 0;
+}

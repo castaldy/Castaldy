@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+main(){
+	int a[1000],n,i,j;
+	cout<<"Enter the size of elements of the array N: "; cin>>n;
+	for(i=1;i<=n;i++){
+		cout<<"Enter value "<<i<<" "; cin>>a[i];
+	}
+		cout<<"\n";
+		cout<<"The array: ";
+		for(i=1;i<=n;i++){
+			cout<<a[i]<<" ";
+		}
+		cout<<"\n";
+		cout<<"The number of identical elements in ascending order: ";
+	for(i=1;i<=n-1;i++)
+	    for(j=i+1;j<=n;j++)
+		    if(a[i]==a[j]&&i<j) cout<<i<<" "<<j<<" ";
+}

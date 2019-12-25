@@ -1,0 +1,13 @@
+#include<stdio.h>
+
+int main(){
+	int k,n;
+	printf("enter the ordinal number of the day of the year(0<k<366)"); scanf("%d", &k);
+	printf("enter number of the week of the first day of the year(0<n<32)"); scanf("%d", &n);
+	if(((k<1)||(k>365))&&((n<1)||(n>31))){
+	printf("error");
+	}else{
+	printf("the ordinal number of the day of the week %d %d = %d",k, n, (k+n-2)%7 +1);
+	}
+	return 0;
+}

@@ -1,0 +1,15 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+main(){
+	int a,b,c;
+	cout<<"Enter the three sides of a triangle a,b,c: "; scanf("%i%i%i", &a, &b, &c);
+	if(a<fabs(b-c)^a>b+c){ cout<<"error(these are not 3 sides of a triangle)";
+	}else{
+	cout<<"these are three sides of a right triangle: ";
+	if(pow(a,2)+pow(b,2)==pow(c,2)^pow(b,2)+pow(c,2)==pow(a,2)^pow(c,2)+pow(a,2)==pow(b,2)){ cout<<"True";
+    }else{
+    	cout<<"False";
+    }
+    } 
+}

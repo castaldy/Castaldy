@@ -1,0 +1,27 @@
+
+//pour voir le resultat, il faut creer un projet dans visual studio par exemple
+//puis créer forcément un fichier nommé test.txt dans le même repertoire que le fichier .cpp contenant le main() 
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+int main() {
+	char c =' ';
+	ifstream inputFile("test.txt");
+	ofstream outputFile("tempFile.txt");
+	bool spaceFound = false;
+	while (inputFile.get(c)) {
+		if (c == ' ') {
+			spaceFound = true;
+		}
+		if (spaceFound) {
+			outputFile << c; 
+			cout << c; //juste pour voir à l'écran le nouveau test
+		}
+	}
+	inputFile.close();
+	outputFile.close();
+	remove("test.txt");
+	rename("tempFile.txt","test.txt");
+}

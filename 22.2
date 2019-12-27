@@ -1,0 +1,24 @@
+//pour voir le resultat, il faut creer un projet dans visual studio par exemple
+//puis créer forcément un fichier nommé test.txt dans le même repertoire que le fichier .cpp contenant le main() 
+
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+int main() {
+	fstream file("test.txt", fstream::out | fstream::app);
+	int nLines, kCharacters;
+	cout << " Entrez n, le nombres de lignes";
+	cin >> nLines;
+	cout << " Entrez n, le nombres de caractères";
+	cin >> kCharacters;
+
+	for (unsigned int i = 0; i < nLines; i++) {
+		for (unsigned int j = 0; j < kCharacters; j++){
+			file << '*';
+		}
+		file << '\n';
+	}
+	file.close();
+}
